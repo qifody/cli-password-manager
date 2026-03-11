@@ -1,0 +1,18 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="arrow" />
+          <option value="hiredis" />
+          <option value="opn-api" />
+          <option value="pyfsense-client" />
+          <option value="python-decouple" />
+          <option value="redis" />
+          <option value="routers" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
