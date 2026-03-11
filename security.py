@@ -7,7 +7,6 @@ import json
 from cryptography.fernet import Fernet
 
 
-# ---------- PASSWORD HASHING ----------
 
 def generate_salt():
     return secrets.token_hex(16)
@@ -28,8 +27,6 @@ def verify_password(password, stored_hash, salt):
     return hmac.compare_digest(new_hash, stored_hash)
 
 
-# ---------- KEY DERIVATION ----------
-
 def derive_key(password, salt):
     key_material = hashlib.pbkdf2_hmac(
         "sha256",
@@ -39,8 +36,6 @@ def derive_key(password, salt):
     )
     return base64.urlsafe_b64encode(key_material)
 
-
-# ---------- ENCRYPT / DECRYPT ----------
 
 def encrypt_data(data, key):
     f = Fernet(key)

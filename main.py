@@ -16,15 +16,14 @@ def run():
         password = getpass("Password: ")
 
     while True:
-        print(
-            """
-            1 Add entry
-            2 Get entry
-            3 Delete entry
-            4 List entries
-            5 Exit
-            """
-        )
+        print("""
+1 Add entry
+2 Get entry
+3 Delete entry
+4 List entries
+5 Exit
+
+""")
         choice = input().strip()
 
         if choice == "1":
